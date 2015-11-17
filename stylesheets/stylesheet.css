@@ -229,7 +229,11 @@ hr {
 
 }
 
-
+#contact_me ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
 /*.btn .icon {
   display: inline;
   width: 16px;
@@ -265,3 +269,5 @@ a {
 .cf {
   zoom:1;
 }
+
+
