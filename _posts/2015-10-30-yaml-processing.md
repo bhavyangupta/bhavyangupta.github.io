@@ -24,7 +24,7 @@ get: # Represent scalars as lists so that the parsing can be done as "vector"
   - snickers: [0]
   - kit_kat: [1]
   - root_beer: [3]
-  ```
+```
 
 The "goto" and "get" primitives are represented as separate nodes in the YAML file.
 Each of them has a list of associative arrays that convert the user commanded goal
@@ -75,7 +75,7 @@ as follows:
 
 Here's the code that I finally ended up with:
 
-```c++
+```
 // Atomic operator to save a single entry in the yaml file as a hashmap 
 template<class T>
 void operator << (map<string,T>& output, YAML::Node& node) {
@@ -96,7 +96,8 @@ class CommandParser {
 };
 
 ```
-```c++
+
+```
 #include "read_yaml.hpp"
 
 CommandParser::CommandParser(string filename)
